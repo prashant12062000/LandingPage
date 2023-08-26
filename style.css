@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.right{
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    opacity: .85;
+}
+
+.right_top{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+}
+
+.right_top_L{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1575621549995-061d8b7b0afe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.right_top_R{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1661320873675-418acb634d0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: cen;
+}
+
+.right_bottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1615561479656-46419d14de5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1392&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* navBar Styling */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+
+}
+.nav_R{
+    display: flex;
+    align-items: center;
+}
+.nav_R a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  font-size: 15px;
+}
+
+.nav_R .Home{
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+    opacity: .6;
+}
+
+.nav_R i{
+    color: royalblue;
+}
+
+/* left_ body styling */
+
+.L_Body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.L_Body h1{
+    font-size: 100px;
+    font-weight: 600;
+}
+.L_Body p{
+    opacity: .6;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.L_Body a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+@media(max-width:500px){
+    .main{
+        flex-direction: column;
+    }
+    .main .left{
+        width: 100%;
+    }
+    .main .right{
+        width: 100%;
+    }
+}
